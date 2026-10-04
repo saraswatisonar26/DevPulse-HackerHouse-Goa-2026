@@ -1,16 +1,72 @@
-# React + Vite
+# DevPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Hacker House Goa 2026 · Wispr Flow Shortlisting Task**
 
-Currently, two official plugins are available:
+DevPulse is a dark-themed productivity dashboard for organizing daily tasks, tracking focus time, capturing quick notes, and keeping personal goals in view.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## The problem
 
-## React Compiler
+Tasks, ideas, and goals can end up scattered across different tools, making it harder to maintain focus and see progress. DevPulse brings these essentials together in one responsive workspace, with browser storage for keeping tasks, notes, and goals between visits.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+- **Productivity dashboard** with a summary of tasks, focus time, daily progress, and weekly goals.
+- **Task management** with task creation and browser `localStorage` persistence.
+- **25-minute focus timer** with start, pause, and reset controls.
+- **Quick Notes** to create and delete titled notes, saved in browser `localStorage`.
+- **Goals** with a title and target description, a progress indicator, and a completion action. Completed status is saved in browser `localStorage`.
+- **Responsive dark theme** with a purple accent, designed for desktop, tablet, and mobile screens.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Voice-driven development
+
+This project was built individually for the Hacker House Goa 2026 Wispr Flow Shortlisting Task using voice-driven development with Wispr Flow.
+
+## Technology stack
+
+- React
+- Vite
+- JavaScript
+- HTML
+- CSS
+- Browser `localStorage`
+
+## Getting started
+
+Requirements: Node.js and npm.
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite in your browser.
+
+## Project structure
+
+```text
+DevPulse/
+├── index.html
+├── package.json
+├── public/
+└── src/
+    ├── App.jsx       # Dashboard and interactive features
+    ├── App.css       # Dashboard styling and responsive layouts
+    ├── index.css     # Global styles
+    ├── main.jsx      # React application entry point
+    └── assets/
+```
+
+## Testing and checks
+
+There is no dedicated automated test script in the project. Use the available build and lint checks:
+
+```bash
+npm run build
+npm run lint
+```
+
+## Future improvements
+
+- Add automated tests for the timer and local-storage workflows.
+- Support more detailed, incremental goal progress.
+- Add task editing and completion controls.
